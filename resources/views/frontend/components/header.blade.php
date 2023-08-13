@@ -43,7 +43,7 @@
             <!--Thay đổi-->
             <div class="logo">
                 <a href="/" class="desktop">
-                    <img src="{{ url('images/logo.png') }}" style="height: 40px;" alt="Home">
+                    <img src="{{ url('images/logoToys.png') }}" style="height: 40px;" alt="Home">
                 </a>
 {{--                <a href="/" class="mobile">--}}
 {{--                    <img src="{{ url('images/icon/LogoMobile.png') }}" alt="Home">--}}
@@ -63,20 +63,20 @@
                     div#search_ajax {
                         position: absolute;
                         top: 10%;
-                       
+
                         background: azure;
                         z-index: 9999;
                     }
                 </style>
                 <form autocomplete="off" action="{{ $link_search ?? route('get.product.list',['k' => Request::get('k')]) }}" role="search" method="GET">
-                  
+
                     <input type="text" name="k" class="form-control" id="keywords" placeholder="Tìm kiếm sản phẩm ...">
                     <div id="search_ajax"></div>
                     <button type="submit" class="btnSearch">
                         <i class="fa fa-search"></i>
                         <span>Tìm kiếm</span>
                     </button>
-                    
+
                 </form>
             </div>
             <ul class="right">
