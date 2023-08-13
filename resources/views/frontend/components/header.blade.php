@@ -79,6 +79,7 @@
 
                 </form>
             </div>
+
             <ul class="right">
                 <li>
                     <a href="{{ route('get.shopping.list') }}" title="Giỏ hàng">
@@ -114,6 +115,7 @@
                                 <span></span>
                             @endif
                         </a>
+
                         @if (isset($item->children) && count($item->children))
                         <div class="submenu">
                             <div class="group">
